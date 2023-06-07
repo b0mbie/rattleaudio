@@ -82,7 +82,7 @@ try {
 
         /* Try to find first free node index instead of pushing a new one. */
         let index;
-        for (let i = 0; i < rattle.nodes.length; i++) {
+        for (let i = 1; i < rattle.nodes.length; i++) {
             if (!rattle.nodes[i]) {
                 index = i;
                 break;
