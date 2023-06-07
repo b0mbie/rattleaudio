@@ -161,7 +161,7 @@ try {
      */
     rattle.setPannerPose = function setPannerPose(node, x, y, z,
         smoothing = 0) {
-        const time = ctx.currentTime + smoothing;
+        const time = Context.currentTime + smoothing;
         node.positionX.linearRampToValueAtTime(x, time);
         node.positionY.linearRampToValueAtTime(y, time);
         node.positionZ.linearRampToValueAtTime(z, time);
