@@ -20,9 +20,10 @@ try {
     const Listener = Context.listener;
 
     /**
-     * Array of AudioNodes that were created.
+     * Array of AudioNodes that were created. Index 0 is always the Context's
+     * destination.
      */
-    rattle.nodes = [];
+    rattle.nodes = [ Context.destination ];
 
     /**
      * Get the AudioNode at this Node index.
